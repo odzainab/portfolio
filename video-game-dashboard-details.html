@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VGS Dataset Project</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1,
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0 20px;
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Carousel Container */
+    .carousel {
+      position: relative;
+      margin-top: 30px;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+      min-width: 250px;
+      margin: 0 10px;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .carousel-item h3 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+
+    .carousel-item p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Navigation Buttons */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .nav-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>VGS Dataset Analysis</h1>
+    <img src="images/vdg.jpeg" alt="VGS Dataset">
+
+    <h2>Introduction</h2>
+    <p>The VGS Dataset provides insights into various video games' sales, ratings, and performance across multiple platforms. This project focuses on analyzing key patterns and trends within the dataset to derive meaningful insights.</p>
+
+    <h2>Objectives</h2>
+    <ul>
+      <li>Identify top-performing games based on sales.</li>
+      <li>Analyze platform performance over time.</li>
+      <li>Explore regional sales distribution.</li>
+      <li>Present insights through pivot charts for clarity.</li>
+    </ul>
+
+    <h2>Methodology</h2>
+    <ul>
+      <li>Data cleaning and preparation using Microsoft Excel.</li>
+      <li>Creation of pivot tables for organized data analysis.</li>
+      <li>Visualization through pivot charts for easy interpretation.</li>
+    </ul>
+    <img src="images/portfolio-1.jpg" alt="Methodology Screenshot">
+
+    <h2>Data Preparation</h2>
+    <ul>
+      <li>Handled missing values and duplicates.</li>
+      <li>Formatted data columns appropriately.</li>
+      <li>Created additional columns for better categorization.</li>
+      <li>Validated data accuracy before visualization.</li>
+    </ul>
+
+    <h2>Data Analysis</h2>
+    <ul>
+      <li>Analyzed sales data by genre, region, and platform.</li>
+      <li>Identified top-selling games globally.</li>
+      <li>Compared sales performance between regions.</li>
+    </ul>
+    <img src="images/portfolio-2.jpg" alt="Data Analysis Screenshot">
+
+    <h2>Data Visualization</h2>
+    <ul>
+      <li>Created pivot charts to show top-selling games.</li>
+      <li>Developed charts to depict regional performance trends.</li>
+      <li>Visualized platform-based sales comparisons.</li>
+    </ul>
+    <img src="images/portfolio-3.jpg" alt="Data Visualization Screenshot">
+
+    <h2>Key Findings</h2>
+    <ul>
+      <li>Action and sports genres dominate global sales.</li>
+      <li>North America leads in video game sales compared to other regions.</li>
+      <li>Specific platforms like PS4 and X360 consistently performed better.</li>
+    </ul>
+
+    <h2>Summary</h2>
+        <ul>
+            <li>Tool Used: Microsoft Excel.</li>
+
+            <a href="Dataset/vgsales.xlsx" class="button" target="_blank">Download Dataset</a>
+            <a href="index.html" class="button">Back to Main Page</a>
+
+    <!-- Carousel Section -->
+    <div class="carousel">
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="images/game-1.jpg" alt="Game 1">
+          <h3>Top Selling Game</h3>
+          <p>Game X tops the global chart with 15M copies sold.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/game-2.jpg" alt="Game 2">
+          <h3>Best Platform</h3>
+          <p>PS4 outperforms other platforms in 2017-2019.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/game-3.jpg" alt="Game 3">
+          <h3>Regional Leader</h3>
+          <p>NA region shows highest gaming sales year on year.</p>
+        </div>
+      </div>
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const prevButton = document.querySelector('.prev-btn');
+    const nextButton = document.querySelector('.next-btn');
+    let currentSlide = 0;
+
+    const updateCarousel = () => {
+      const slideWidth = document.querySelector('.carousel-item').offsetWidth + 20; // 20px margin
+      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    };
+
+    nextButton.addEventListener('click', () => {
+      const totalSlides = document.querySelectorAll('.carousel-item').length;
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateCarousel();
+      }
+    });
+
+    prevButton.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateCarousel();
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+ 
